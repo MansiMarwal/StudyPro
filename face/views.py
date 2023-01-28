@@ -40,9 +40,5 @@ def predictionView(request):
         print("d", model.predict(data), model.predict(data)[0])
         print(result) #debug
         context = {"result" : result}
-
-        if result < 40:
-            print("weak")
-
         return render(request, "face/result.html", context)
     return render(request, "face/prediction.html")
