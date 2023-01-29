@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     "register.apps.RegisterConfig",
     "crispy_forms",
+    'face.apps.FaceConfig',
+
 ]
 
 AUTH_USER_MODEL = "register.CustomUser"
